@@ -28,14 +28,11 @@ void main(List<String> arguments) {
 }
 
 void generateModel() async {
-  final String projectRoot = Platform.environment['PWD'] ?? '';
-  print('PROJECT ROOT DIRECTORY: ' + Directory.current.path);
-
   //Путь до файла шаблона
-  final templateFile = File('templates/model_template.txt');
+  final templateFile = File('model_template.txt');
 
   //Путь до выходного файла
-  final outputFile = File('$projectRoot/$path/${className}_module.dart');
+  final outputFile = File('${Directory.current.path}/$path/${className}_module.dart');
 
   // Создание директорий, если путь не существует
   outputFile.parent.createSync(recursive: true);
