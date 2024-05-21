@@ -29,10 +29,10 @@ void main(List<String> arguments) {
 
 void generateModel() async {
   final String projectRoot = Platform.environment['PWD'] ?? '';
-  print('PROJECT ROOT DIRECTORY: ' + projectRoot);
+  print('PROJECT ROOT DIRECTORY: ' + Directory.current.path);
 
   //Путь до файла шаблона
-  final templateFile = File('/templates/model_template.txt');
+  final templateFile = File('templates/model_template.txt');
 
   //Путь до выходного файла
   final outputFile = File('$projectRoot/$path/${className}_module.dart');
