@@ -32,7 +32,7 @@ void generateModel() async {
   print('PROJECT ROOT DIRECTORY: ' + projectRoot);
 
   //Путь до файла шаблона
-  final templateFile = File('templates/model_template.txt');
+  final templateFile = File('/templates/model_template.txt');
 
   //Путь до выходного файла
   final outputFile = File('$projectRoot/$path/${className}_module.dart');
