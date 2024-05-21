@@ -20,6 +20,7 @@ void main(List<String> arguments) {
   className = argResults['class'] ?? '';
   username = argResults['username'] ?? '';
   path = argResults['path'] ?? '';
+  pass = argResults['pass'] ?? '';
 
   if (className.isEmpty || username.isEmpty || path.isEmpty) {
     print('Please specify class, username, and path');
