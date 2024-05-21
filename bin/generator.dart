@@ -2,7 +2,6 @@ library generator;
 
 import 'dart:io';
 import 'package:args/args.dart';
-import 'package:flutter/services.dart';
 
 late String className;
 late String username;
@@ -29,15 +28,9 @@ void main(List<String> arguments) {
 }
 
 void generateModel() async {
-  String templatePath = await rootBundle.loadString('packages/generator/templates/model_template.txt');
-  final templateFile = File(templatePath);
-  print('File path: ${templateFile.path}');
-
   //Путь до файла шаблона
-
-  print('File path: ${templateFile.path}');
-  print('Absolute file path: ${templateFile.absolute.path}');
-
+  final templateFile = File('model_template.txt');
+  print('PATCH TO FILE TEMPLATE: ${templateFile.path}');
 
   //Путь до выходного файла
   final outputFile = File('${Directory.current.path}/$path/${className}_module.dart');

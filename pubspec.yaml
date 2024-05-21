@@ -21,4 +21,4 @@ flutter:
 
 
 include:
-  - bin/templates/**
+  - bin/templates/model_template.txt
