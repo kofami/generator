@@ -16,7 +16,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
-flutter:
-  assets:
-    - bin/templates/model_template.txt

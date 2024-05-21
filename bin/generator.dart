@@ -28,13 +28,8 @@ void main(List<String> arguments) {
 }
 
 void generateModel() async {
-  Uri scriptUri = Platform.script;
-  String scriptPath = scriptUri.toFilePath();
-  print('Script path: $scriptPath');
-
   //Путь до файла шаблона
-  final templateFile = File('model_template.txt');
-  print('PATCH TO FILE TEMPLATE: ${templateFile.path}');
+  final templateFile = File('assets/templates/model_template.txt');
 
   //Путь до выходного файла
   final outputFile = File('${Directory.current.path}/$path/${className}_module.dart');
