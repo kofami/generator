@@ -30,6 +30,9 @@ void main(List<String> arguments) {
 void generateModel() async {
   //Путь до файла шаблона
   final templateFile = File('model_template.txt');
+  print('File path: ${templateFile.path}');
+  print('Absolute file path: ${templateFile.absolute.path}');
+
 
   //Путь до выходного файла
   final outputFile = File('${Directory.current.path}/$path/${className}_module.dart');
