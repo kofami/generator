@@ -2,6 +2,7 @@ library generator;
 
 import 'dart:io';
 import 'package:args/args.dart';
+import 'package:path/path.dart' as pathPackage;
 
 late String className;
 late String username;
@@ -28,8 +29,13 @@ void main(List<String> arguments) {
 }
 
 void generateModel() async {
+
+  final packagePath = pathPackage.join('packages', 'generator', 'templates', 'model_template.txt');
+  final templateFile = File(packagePath);
+  print('File path: ${templateFile.path}');
+
   //Путь до файла шаблона
-  final templateFile = File('model_template.txt');
+
   print('File path: ${templateFile.path}');
   print('Absolute file path: ${templateFile.absolute.path}');
 
