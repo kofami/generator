@@ -21,4 +21,4 @@ flutter:
 
 
 include:
-  - templates/**
+  - bin/templates/**
