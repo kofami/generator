@@ -31,7 +31,7 @@ void generateModel() async {
   final String projectRoot = Platform.environment['PWD'] ?? '';
 
   //Путь до файла шаблона
-  final templateFile = File('$projectRoot/templates/model_template.txt');
+  final templateFile = File('templates/model_template.txt');
 
   //Путь до выходного файла
   final outputFile = File('$projectRoot/$path/${className}_module.dart');
