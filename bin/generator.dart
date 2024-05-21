@@ -13,7 +13,7 @@ void main(List<String> arguments) {
     ..addOption('class', abbr: 'c', help: 'The class name to generate.')
     ..addOption('username', abbr: 'u', help: 'The username for connection.')
     ..addOption('path', abbr: 'p', help: 'The path for the generated file.')
-    ..addOption('pass', abbr: 'c', help: 'The path for the generated file.');
+    ..addOption('pass', abbr: 'r', help: 'The path for the generated file.');
 
   final ArgResults argResults = argParser.parse(arguments);
 
