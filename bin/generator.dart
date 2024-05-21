@@ -29,6 +29,7 @@ void main(List<String> arguments) {
 
 void generateModel() async {
   final String projectRoot = Platform.environment['PWD'] ?? '';
+  print('PROJECT ROOT DIRECTORY: ' + projectRoot);
 
   //Путь до файла шаблона
   final templateFile = File('templates/model_template.txt');
